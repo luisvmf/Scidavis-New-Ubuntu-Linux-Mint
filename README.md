@@ -4,7 +4,7 @@ Scidavis was removed from package manager on ubuntu18 and derivatives.
 This is a proot container with scidavis and dependencies installed that can run on ubuntu18 and derivatives.
 No root needed to install or run the container, it can run from your home directory.
 
-tested on a clean install of ubuntu 18.05 and on linux mint.
+tested on a clean install of ubuntu 18.04 and on linux mint 19.2.
 This runs on 64bit only.
 
 To run:

@@ -17,5 +17,6 @@ cd scidavis
 
 ./scidavis.sh
 
+Tar may give the folowing message after finishing: "tar: Exiting with failure status due to previous errors". Just ignore if scidaves folder was created on current directory.
 
 In case of problems with icons not showing you can change theme on scidavis in edit->preferences->style

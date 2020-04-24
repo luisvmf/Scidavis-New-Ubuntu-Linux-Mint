@@ -11,8 +11,11 @@ Proot is included on the tar file below. The file is very big (1G). This is not 
 To run:
 wget https://github.com/luisvmf/Scidavis-ubuntu18-mint19.2/releases/download/1.0.0/scidavis.tar
 
-tar -xvf scidavis.tar (may give an error, just ignore if scidavis folder is created)
+tar -xvf scidavis.tar
 
 cd scidavis
 
 ./scidavis.sh
+
+
+In case of problems with icons not showing you can change theme on scidavis in edit->preferences->style

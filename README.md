@@ -9,6 +9,9 @@ This runs on 64bit only.
 
 To run:
 wget ...
+
 tar -xvf scidavis.tar
+
 cd scidavis
+
 ./scidavis.sh

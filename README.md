@@ -1,23 +1,45 @@
-# Scidavis-ubuntu18-mint19.2
+# Installing scidavis on newer Linux Mint/Ubuntu
 
-Scidavis was removed from package manager on ubuntu 18 and derivatives.
-This is a proot container with scidavis and dependencies installed that can run on ubuntu 18 and derivatives.
-No root needed to install or run the container, it can run from your home directory.
+Ubuntu 20.10
 
-Tested on a clean install of ubuntu 18.04 and on linux mint 19.2. Probabily can run on other versions too.
-This runs on 64bit only.
-
-Proot is included on the tar file below. The file is very big (1G). This is not an virtual machine, so it doesn't need lots of ram memory to run. Your home directory is mounted on /home on the container. Scidavis connects directly to the Xserver on the host, the shell script distributed with the tar bellow takes care of exporting the required DISPLAY variable from the host to the container.
-
-To run:
-wget https://github.com/luisvmf/Scidavis-ubuntu18-mint19.2/releases/download/1.0.0/scidavis.tar
-
-tar -xvf scidavis.tar
-
-cd scidavis
-
-./scidavis.sh
-
-Tar may give the folowing message after finishing: "tar: Exiting with failure status due to previous errors". Just ignore if scidavis folder was created on current directory.
-
-In case of problems with icons not showing you can change theme on scidavis in edit->preferences->style
+  echo 'deb http://download.opensuse.org/repositories/home:/hpcoder1/xUbuntu_20.10/ /' | sudo tee /etc/apt/sources.list.d/home:hpcoder1.list
+  curl -fsSL https://download.opensuse.org/repositories/home:hpcoder1/xUbuntu_20.10/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_hpcoder1.gpg > /dev/null
+  sudo apt update
+  sudo apt install scidavis
+ 
+ Ubuntu 20.04 / mint 20 / mint 20.01
+  
+  echo 'deb http://download.opensuse.org/repositories/home:/hpcoder1/xUbuntu_20.04/ /' | sudo tee /etc/apt/sources.list.d/home:hpcoder1.list
+  curl -fsSL https://download.opensuse.org/repositories/home:hpcoder1/xUbuntu_20.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_hpcoder1.gpg > /dev/null
+  sudo apt update
+  sudo apt install scidavis
+  
+Ubuntu 19.10 / mint
+  
+  echo 'deb http://download.opensuse.org/repositories/home:/hpcoder1/xUbuntu_19.10/ /' | sudo tee /etc/apt/sources.list.d/home:hpcoder1.list
+  curl -fsSL https://download.opensuse.org/repositories/home:hpcoder1/xUbuntu_19.10/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_hpcoder1.gpg > /dev/null
+  sudo apt update
+  sudo apt install scidavis
+  
+Ubuntu 19.04 /mint 
+  
+  echo 'deb http://download.opensuse.org/repositories/home:/hpcoder1/xUbuntu_19.04/ /' | sudo tee /etc/apt/sources.list.d/home:hpcoder1.list
+  curl -fsSL https://download.opensuse.org/repositories/home:hpcoder1/xUbuntu_19.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_hpcoder1.gpg > /dev/null
+  sudo apt update
+  sudo apt install scidavis
+  
+ Ubuntu 18.10 
+ 
+  echo 'deb http://download.opensuse.org/repositories/home:/hpcoder1/xUbuntu_18.10/ /' | sudo tee /etc/apt/sources.list.d/home:hpcoder1.list
+  curl -fsSL https://download.opensuse.org/repositories/home:hpcoder1/xUbuntu_18.10/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_hpcoder1.gpg > /dev/null
+  sudo apt update
+  sudo apt install scidavis
+  
+  Ubuntu 18.04 / mint 19 / mint 19.1 / mint 19.2 / mint 19.3
+  
+  echo 'deb http://download.opensuse.org/repositories/home:/hpcoder1/xUbuntu_18.04/ /' | sudo tee /etc/apt/sources.list.d/home:hpcoder1.list
+  curl -fsSL https://download.opensuse.org/repositories/home:hpcoder1/xUbuntu_18.04/Release.key | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/home_hpcoder1.gpg > /dev/null
+  sudo apt update
+  sudo apt install scidavis
+  
+  

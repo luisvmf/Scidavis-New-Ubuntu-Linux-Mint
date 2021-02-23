@@ -1,5 +1,10 @@
 # Installing scidavis on newer Linux Mint/Ubuntu
 
+Check the version number of your system with:
+
+    cat /etc/lsb-release
+and run the commands for your system version number:
+
  # Ubuntu 18.04 / mint 19 / mint 19.1 / mint 19.2 / mint 19.3
   
     echo 'deb http://download.opensuse.org/repositories/home:/hpcoder1/xUbuntu_18.04/ /' | sudo tee /etc/apt/sources.list.d/home:hpcoder1.list

@@ -48,4 +48,5 @@ and run the commands for your system version number:
     sudo apt install scidavis
   
   
-  
+ # For other distributions check: https://software.opensuse.org/download.html?project=home%3Ahpcoder1&package=scidavis
+ Warning: Downloading the binary packages directly doesn't work!!!
